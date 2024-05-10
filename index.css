@@ -1,0 +1,314 @@
+
+/* .header {border:solid; float : left; background-color: white; width:100%; position: absolute;} */
+/* 중앙 정렬 : https://creativecloud.adobe.com/ko/learn/dreamweaver/web/center-website */
+#wrapper {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.header {
+  float : left; 
+  background-color: skyblue; 
+  width:100%; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  /* mix-blend-mode: difference;  */
+  border-bottom: 1px solid black; 
+  height: 40px;
+  z-index: 9;
+}
+
+
+
+.tab_menu > h1 { /* Title */
+  display: inline; 
+  float: left; 
+  margin-left: 20px; 
+  margin-right: 100px;
+  
+}
+
+.tab_menu {
+  align-items: center; 
+  display: flex; 
+  position: absolute; 
+  margin-top: auto; 
+  height: 100%;
+  
+}
+
+.tab_menu .tab_list {
+  padding-left: 100px; 
+  overflow:hidden; 
+  list-style-type:none;
+}
+
+.tab_menu .tab_list li:not(.p_list) { 
+  float:left; 
+}
+/* .tab_menu .tab_list li {margin-left:14px; width:100px; height:40px; text-align:center; color:white; background:gray; padding-top: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;} */
+/* .tab_menu .tab_list li {margin-left:14px; width:100px; height:40px; text-align:center; color:white; background:gray; padding-top: 10px; } */
+/* .tab_menu .tab_list li {margin-left:35px; width:100px; height:40px; text-align:center;} */
+.tab_menu .tab_list li {
+  margin-right:100px; 
+  align-items : center;
+}
+
+
+.main { 
+  margin-top: 100px; 
+}
+
+.btn {
+  display: block; 
+  color:black;  
+  text-decoration-line: none; 
+  font-size:23px;
+}
+
+.btn:hover {
+  color: white;
+}
+
+/* .p_menu {left:235px; top: 125px; display: none;} */
+/*.p_menu {position: absolute; width: 100px; height: 50px; margin-left: -100px; display:none} */
+.p_menu {
+  position: absolute; 
+  width: 100px; 
+  height: 50px; 
+  display:none;
+  margin-left: -5.3%;
+}
+.p_list {
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+.p_menu .p_list li {
+
+  flex-direction: column; 
+  overflow:hidden; 
+  list-style-type:none; 
+  background-color: white; 
+  width: 100px; 
+  height: 40px; 
+  border-width : 0 1px 1px 1px;
+  border-style: solid;
+  border-color: black;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.p_btn {
+  display: block; 
+  color:black; 
+  text-decoration-line: none; 
+  font-size: 20px;
+  text-align: center;
+}
+
+#Me {
+  position: relative;
+  /* display:block;
+  color:black;
+  height:10px; width:100%; */
+  
+}
+
+.Me_Title, .Me_Info { /* 아이템 크기 동일하게 설정 */
+  
+  flex: 0 0 25%;
+  /* border: 1px solid skyblue; 
+    outline: 1px solid skyblue;
+    */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid skyblue;
+}
+
+#AboutMe_Infos {
+ 
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#AboutMe_Title {
+
+  border-bottom: 1px solid skyblue;
+  margin-left: 25%;
+  margin-right: 25%
+  /* background-color: #529AC7; */
+  /* font-size: 2.4em; */
+}
+
+/* 
+.Inner {
+  position: relative;
+
+} */
+
+/* .AboutMe_Infos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+} */
+
+
+.Me_Title {
+  /* background-color: cornflowerblue; */
+  /* padding: 45px 0 45px 0; */
+  padding: 45px 0 45px 30px;
+  font-size: 1.5em;
+  font-weight: 600;
+  justify-content: left;
+}
+
+.Me_Info {
+  /*background-color: brown; */
+  /*margin: 0 auto 2rem; */
+  font-size: 1.0em;
+  font-weight: 500;
+  flex-direction: column;
+
+}
+
+/* 
+#Skill {
+  background-color: lightgray;
+  
+} */
+#SubTitle_Skill {
+  background-color: lightgray;
+}
+
+
+#Skill_Infos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+  background-color: lightgray;
+}
+#Personal, #Practice {  /* 개인, 실무에서 익힌 스킬*/
+  /* background-color: #272727; */
+  display: flex;
+  justify-content: center;
+}
+
+
+.Skill_Box {
+  
+  padding: 20px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+
+  margin: 20px;
+
+  float: left;
+}
+
+.Skill_Title {
+  font-size: 30px;
+  border-bottom: 1px solid grey;
+
+}
+
+.Skill_Info {
+  font-size: 17px;
+  padding : 10px 0 10px 0;
+  line-height: 1.5;
+}
+
+.Skill_Gubn {
+  margin: 20px auto 20px auto;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+
+#SubTitle_PortPolio {
+  background-color: #BDE7FC;
+}
+
+#PortPolio_Infos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+  background-color: #BDE7FC;
+}
+
+.PortPolio_Gubn {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-bottom: 1.5px solid white;
+}
+
+
+
+.PortPolio_Info {
+  width: 100%;
+  text-align:center;
+}
+
+.PortPolio_Info img {
+  margin: 0 auto 0 auto;
+}
+
+
+
+.Subtitle {
+  margin: 100px 0 10px 0;
+  font-size: 2.7em; 
+  /* margin-bottom: 10px;
+  font-weight: 600; */
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+#portpolio_sub-contents {
+  font-size: medium; 
+}
+
+.PortPolio_SubGubn {
+  text-align: center;
+  padding-bottom : 10px;
+  margin: 30px 70px 20px 70px;
+  font-size: 1.2em;
+  font-weight: 600;
+  
+  border-bottom: 1px solid white;
+}
+
+#portpolio_C_Sharp {
+  background-color: lightseagreen;
+  height: 85vh;
+}
+
+
+/* .inner {
+  position: relative;
+  margin: auto;
+  background-color:blue;
+  padding-bottom: 2em;
+  display: block;
+  
+} */
+
+/* footer {position:absolute; bottom:10vh;} */
